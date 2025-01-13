@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		8C029F712D35750A008AD5D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C029F572D357508008AD5D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C029F5E2D357508008AD5D7;
+			remoteInfo = PeerMate;
+		};
+		8C029F7B2D35750A008AD5D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C029F572D357508008AD5D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C029F5E2D357508008AD5D7;
+			remoteInfo = PeerMate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C029F5F2D357508008AD5D7 /* PeerMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeerMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C029F702D35750A008AD5D7 /* PeerMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeerMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C029F7A2D35750A008AD5D7 /* PeerMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeerMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8C029F612D357508008AD5D7 /* PeerMate */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PeerMate;
+			sourceTree = "<group>";
+		};
+		8C029F732D35750A008AD5D7 /* PeerMateTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PeerMateTests;
+			sourceTree = "<group>";
+		};
+		8C029F7D2D35750A008AD5D7 /* PeerMateUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PeerMateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C029F5C2D357508008AD5D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C029F6D2D35750A008AD5D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C029F772D35750A008AD5D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C029F562D357508008AD5D7 = {
+			isa = PBXGroup;
+			children = (
+				8C029F612D357508008AD5D7 /* PeerMate */,
+				8C029F732D35750A008AD5D7 /* PeerMateTests */,
+				8C029F7D2D35750A008AD5D7 /* PeerMateUITests */,
+				8C029F602D357508008AD5D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C029F602D357508008AD5D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C029F5F2D357508008AD5D7 /* PeerMate.app */,
+				8C029F702D35750A008AD5D7 /* PeerMateTests.xctest */,
+				8C029F7A2D35750A008AD5D7 /* PeerMateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C029F5E2D357508008AD5D7 /* PeerMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C029F842D35750A008AD5D7 /* Build configuration list for PBXNativeTarget "PeerMate" */;
+			buildPhases = (
+				8C029F5B2D357508008AD5D7 /* Sources */,
+				8C029F5C2D357508008AD5D7 /* Frameworks */,
+				8C029F5D2D357508008AD5D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8C029F612D357508008AD5D7 /* PeerMate */,
+			);
+			name = PeerMate;
+			packageProductDependencies = (
+			);
+			productName = PeerMate;
+			productReference = 8C029F5F2D357508008AD5D7 /* PeerMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C029F6F2D35750A008AD5D7 /* PeerMateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C029F872D35750A008AD5D7 /* Build configuration list for PBXNativeTarget "PeerMateTests" */;
+			buildPhases = (
+				8C029F6C2D35750A008AD5D7 /* Sources */,
+				8C029F6D2D35750A008AD5D7 /* Frameworks */,
+				8C029F6E2D35750A008AD5D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C029F722D35750A008AD5D7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8C029F732D35750A008AD5D7 /* PeerMateTests */,
+			);
+			name = PeerMateTests;
+			packageProductDependencies = (
+			);
+			productName = PeerMateTests;
+			productReference = 8C029F702D35750A008AD5D7 /* PeerMateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C029F792D35750A008AD5D7 /* PeerMateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C029F8A2D35750A008AD5D7 /* Build configuration list for PBXNativeTarget "PeerMateUITests" */;
+			buildPhases = (
+				8C029F762D35750A008AD5D7 /* Sources */,
+				8C029F772D35750A008AD5D7 /* Frameworks */,
+				8C029F782D35750A008AD5D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C029F7C2D35750A008AD5D7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8C029F7D2D35750A008AD5D7 /* PeerMateUITests */,
+			);
+			name = PeerMateUITests;
+			packageProductDependencies = (
+			);
+			productName = PeerMateUITests;
+			productReference = 8C029F7A2D35750A008AD5D7 /* PeerMateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C029F572D357508008AD5D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					8C029F5E2D357508008AD5D7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					8C029F6F2D35750A008AD5D7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 8C029F5E2D357508008AD5D7;
+					};
+					8C029F792D35750A008AD5D7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 8C029F5E2D357508008AD5D7;
+					};
+				};
+			};
+			buildConfigurationList = 8C029F5A2D357508008AD5D7 /* Build configuration list for PBXProject "PeerMate" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C029F562D357508008AD5D7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8C029F602D357508008AD5D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C029F5E2D357508008AD5D7 /* PeerMate */,
+				8C029F6F2D35750A008AD5D7 /* PeerMateTests */,
+				8C029F792D35750A008AD5D7 /* PeerMateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C029F5D2D357508008AD5D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C029F6E2D35750A008AD5D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C029F782D35750A008AD5D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C029F5B2D357508008AD5D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C029F6C2D35750A008AD5D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C029F762D35750A008AD5D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C029F722D35750A008AD5D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C029F5E2D357508008AD5D7 /* PeerMate */;
+			targetProxy = 8C029F712D35750A008AD5D7 /* PBXContainerItemProxy */;
+		};
+		8C029F7C2D35750A008AD5D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C029F5E2D357508008AD5D7 /* PeerMate */;
+			targetProxy = 8C029F7B2D35750A008AD5D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8C029F822D35750A008AD5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C029F832D35750A008AD5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8C029F852D35750A008AD5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PeerMate/PeerMate.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PeerMate/Preview Content\"";
+				DEVELOPMENT_TEAM = D7MU27WR7M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zisa.PeerMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8C029F862D35750A008AD5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PeerMate/PeerMate.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PeerMate/Preview Content\"";
+				DEVELOPMENT_TEAM = D7MU27WR7M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zisa.PeerMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8C029F882D35750A008AD5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D7MU27WR7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zisa.PeerMateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeerMate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PeerMate";
+			};
+			name = Debug;
+		};
+		8C029F892D35750A008AD5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D7MU27WR7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zisa.PeerMateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeerMate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PeerMate";
+			};
+			name = Release;
+		};
+		8C029F8B2D35750A008AD5D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D7MU27WR7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zisa.PeerMateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PeerMate;
+			};
+			name = Debug;
+		};
+		8C029F8C2D35750A008AD5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D7MU27WR7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zisa.PeerMateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PeerMate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C029F5A2D357508008AD5D7 /* Build configuration list for PBXProject "PeerMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C029F822D35750A008AD5D7 /* Debug */,
+				8C029F832D35750A008AD5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C029F842D35750A008AD5D7 /* Build configuration list for PBXNativeTarget "PeerMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C029F852D35750A008AD5D7 /* Debug */,
+				8C029F862D35750A008AD5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C029F872D35750A008AD5D7 /* Build configuration list for PBXNativeTarget "PeerMateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C029F882D35750A008AD5D7 /* Debug */,
+				8C029F892D35750A008AD5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C029F8A2D35750A008AD5D7 /* Build configuration list for PBXNativeTarget "PeerMateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C029F8B2D35750A008AD5D7 /* Debug */,
+				8C029F8C2D35750A008AD5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C029F572D357508008AD5D7 /* Project object */;
+}
