@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct PeerMateApp: App {
+    @AppStorage("appearance") private var appearance: Appearance = .system
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .frame(minWidth: 800, minHeight: 600)
+                .preferredColorScheme(appearance.colorScheme)
         }
     }
 }
