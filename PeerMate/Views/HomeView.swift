@@ -11,7 +11,7 @@ struct HomeView: View {
     
     private var currentDate: String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy 年 M 月 d 日"
+        formatter.dateFormat = "M 月 d 日"
         return formatter.string(from: Date())
     }
     

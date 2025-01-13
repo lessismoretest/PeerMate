@@ -12,15 +12,7 @@ class AIService {
             throw AIError.invalidAPIKey
         }
         
-        let prompt = """
-        请以第一人称的口吻，描述如果\(person.name)活到今天，看到一个\(userAge)岁的人会说些什么。
-        要求：
-        1. 基于历史资料，说明\(person.name)在\(userAge)岁时的真实经历，说说今天在干啥（基于史诗，如果没有史实，可以往前往后推一段时间，看看有什么相关事件，推理出当时正在干什么，比如正在复盘xxx或正在准备xxx等
-        2. 如果\(person.name)活到今天，会对一个\(userAge)岁的年轻人说些什么
-        3. 语气要像\(person.name)本人在说话
-        4. 回答要包含具体的历史事件和年份
-        5. 字数在300字以内
-        """
+        let prompt = Prompt.generateHistoricalComparison(for: person.name, at: userAge)
         
         switch config.selectedModel {
         case AIModel.gemini.rawValue:

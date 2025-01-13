@@ -29,6 +29,7 @@ enum SettingsCategory: String, CaseIterable, Identifiable {
     case appearance = "外观"
     case personal = "个人信息"
     case ai = "AI 设置"
+    case general = "通用"
     
     var id: String { rawValue }
     
@@ -42,6 +43,8 @@ enum SettingsCategory: String, CaseIterable, Identifiable {
             return "person.circle"
         case .ai:
             return "cpu"
+        case .general:
+            return "gearshape"
         }
     }
 }
@@ -52,6 +55,7 @@ struct SettingsDetailView: View {
     @AppStorage("appearance") private var appearance: Appearance = .system
     @AppStorage("birthDate") private var birthDate = Date()
     @StateObject private var userSettings = UserSettings()
+    @State private var launchAtLogin: Bool = LaunchManager.shared.isEnabled
     
     var body: some View {
         Form {
@@ -73,6 +77,14 @@ struct SettingsDetailView: View {
             case .ai:
                 Section {
                     AISettingsView(userSettings: userSettings)
+                }
+                
+            case .general:
+                Section {
+                    Toggle("开机时自动启动", isOn: $launchAtLogin)
+                        .onChange(of: launchAtLogin) { _, newValue in
+                            LaunchManager.shared.isEnabled = newValue
+                        }
                 }
             }
         }
