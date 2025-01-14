@@ -1,26 +1,35 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var selectedCategory: SettingsCategory? = .appearance
-    
     var body: some View {
-        NavigationSplitView {
-            // 左侧分类列表
-            List(SettingsCategory.allCases, selection: $selectedCategory) { category in
-                NavigationLink(value: category) {
-                    Label(category.name, systemImage: category.icon)
+        List {
+            Section {
+                NavigationLink {
+                    SettingsDetailView(category: .appearance)
+                } label: {
+                    Label("外观", systemImage: "paintbrush")
+                }
+                
+                NavigationLink {
+                    SettingsDetailView(category: .personal)
+                } label: {
+                    Label("个人信息", systemImage: "person.circle")
+                }
+                
+                NavigationLink {
+                    SettingsDetailView(category: .ai)
+                } label: {
+                    Label("AI 设置", systemImage: "cpu")
+                }
+                
+                NavigationLink {
+                    SettingsDetailView(category: .general)
+                } label: {
+                    Label("通用", systemImage: "gearshape")
                 }
             }
-            .navigationTitle("设置")
-        } detail: {
-            // 右侧具体设置内容
-            if let category = selectedCategory {
-                SettingsDetailView(category: category)
-            } else {
-                Text("请选择设置类别")
-                    .foregroundColor(.secondary)
-            }
         }
+        .navigationTitle("设置")
     }
 }
 
@@ -61,34 +70,25 @@ struct SettingsDetailView: View {
         Form {
             switch category {
             case .appearance:
-                Section {
-                    Picker("主题", selection: $appearance) {
-                        ForEach(Appearance.allCases) { appearance in
-                            Text(appearance.name).tag(appearance)
-                        }
+                Picker("主题", selection: $appearance) {
+                    ForEach(Appearance.allCases) { appearance in
+                        Text(appearance.name).tag(appearance)
                     }
                 }
                 
             case .personal:
-                Section {
-                    DatePicker("出生日期", selection: $birthDate, displayedComponents: .date)
-                }
+                DatePicker("出生日期", selection: $birthDate, displayedComponents: .date)
                 
             case .ai:
-                Section {
-                    AISettingsView(userSettings: userSettings)
-                }
+                AISettingsView(userSettings: userSettings)
                 
             case .general:
-                Section {
-                    Toggle("开机时自动启动", isOn: $launchAtLogin)
-                        .onChange(of: launchAtLogin) { _, newValue in
-                            LaunchManager.shared.isEnabled = newValue
-                        }
-                }
+                Toggle("开机时自动启动", isOn: $launchAtLogin)
+                    .onChange(of: launchAtLogin) { _, newValue in
+                        LaunchManager.shared.isEnabled = newValue
+                    }
             }
         }
-        .padding()
         .navigationTitle(category.name)
     }
 }
