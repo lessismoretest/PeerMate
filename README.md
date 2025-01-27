@@ -1,9 +1,16 @@
+
+
+<img src="PeerMate/Assets.xcassets/AppIcon.appiconset/mac1024.png" width="128" alt="应用图标"/>
+
 # PeerMate
 
-# 写在前：
-全cursor编程，api-key需自备。
 
-PeerMate 是一个基于 SwiftUI 开发的macOS 应用程序，可以自定义人物，展示人物在用户同龄时的在做什么，当天在做什么，以及对用户说些什么。
+## 写在前：
+
+PeerMate 是一个基于 SwiftUI 开发的macOS 应用程序，可以自定义人物，展示人物在用户同龄时的在做什么，当天在做什么，以及对同龄的你说些什么，如有任何可以激励你的功能，都可以随时找我添加~
+全cursor编程，api-key需自备。如侵权，请告知，立即删除。无任何收益，全开源
+
+
 
 ## 应用截图
 
