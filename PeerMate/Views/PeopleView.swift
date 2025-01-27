@@ -197,67 +197,80 @@ private struct PersonFormSheet: View {
     }
     
     var body: some View {
-        NavigationView {
-            Form {
-                Section("头像") {
-                    HStack {
-                        Spacer()
-                        if let image = avatarImage {
-                            Image(nsImage: image)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 100, height: 100)
-                                .clipShape(Circle())
-                                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
-                        } else {
-                            Image(systemName: "person.circle.fill")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(.gray)
-                        }
-                        Spacer()
+        VStack(spacing: 20) {
+            HStack {
+                Spacer()
+                Text(editingPerson == nil ? "添加人物" : "编辑人物")
+                    .font(.headline)
+                Spacer()
+            }
+            .padding(.top)
+            
+            VStack(spacing: 16) {
+                // 头像部分
+                VStack(spacing: 12) {
+                    if let image = avatarImage {
+                        Image(nsImage: image)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 100, height: 100)
+                            .clipShape(Circle())
+                            .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                    } else {
+                        Image(systemName: "person.circle.fill")
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.gray)
                     }
-                    .padding(.vertical)
                     
                     Button("选择头像") {
                         isShowingImagePicker = true
                     }
-                    .fileImporter(
-                        isPresented: $isShowingImagePicker,
-                        allowedContentTypes: [.image],
-                        allowsMultipleSelection: false
-                    ) { result in
-                        switch result {
-                        case .success(let files):
-                            if let url = files.first {
-                                loadImage(from: url)
-                            }
-                        case .failure(let error):
-                            print("Error selecting image:", error)
-                        }
-                    }
+                    .buttonStyle(.bordered)
+                }
+                .padding(.bottom, 8)
+                
+                // 姓名输入
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("姓名")
+                        .foregroundColor(.secondary)
+                    TextField("请输入姓名", text: $name)
+                        .textFieldStyle(.roundedBorder)
                 }
                 
-                Section("基本信息") {
-                    TextField("姓名", text: $name)
-                }
-            }
-            .navigationTitle(editingPerson == nil ? "添加人物" : "编辑人物")
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
+                Spacer()
+                
+                // 底部按钮
+                HStack(spacing: 16) {
                     Button("取消") {
                         dismiss()
                     }
-                }
-                ToolbarItem(placement: .confirmationAction) {
+                    .buttonStyle(.bordered)
+                    
                     Button(editingPerson == nil ? "添加" : "保存") {
                         savePerson()
                     }
+                    .buttonStyle(.borderedProminent)
                     .disabled(name.isEmpty)
                 }
             }
+            .padding()
         }
-        .frame(minWidth: 400, minHeight: 500)
+        .frame(width: 300, height: 400)
+        .fileImporter(
+            isPresented: $isShowingImagePicker,
+            allowedContentTypes: [.image],
+            allowsMultipleSelection: false
+        ) { result in
+            switch result {
+            case .success(let files):
+                if let url = files.first {
+                    loadImage(from: url)
+                }
+            case .failure(let error):
+                print("Error selecting image:", error)
+            }
+        }
     }
     
     private func loadImage(from url: URL) {
